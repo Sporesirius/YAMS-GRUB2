@@ -1105,25 +1105,25 @@ main (int argc, char *argv[])
 	  switch (platform)
 	    {
 	    case GRUB_INSTALL_PLATFORM_I386_EFI:
-	      efi_file = "BOOTIA32.EFI";
+	      efi_file = "YAMS_GRUBIA32.EFI";
 	      break;
 	    case GRUB_INSTALL_PLATFORM_X86_64_EFI:
-	      efi_file = "BOOTX64.EFI";
+	      efi_file = "YAMS_GRUBX64.EFI";
 	      break;
 	    case GRUB_INSTALL_PLATFORM_IA64_EFI:
-	      efi_file = "BOOTIA64.EFI";
+	      efi_file = "YAMS_GRUBIA64.EFI";
 	      break;
 	    case GRUB_INSTALL_PLATFORM_ARM_EFI:
-	      efi_file = "BOOTARM.EFI";
+	      efi_file = "YAMS_GRUBARM.EFI";
 	      break;
 	    case GRUB_INSTALL_PLATFORM_ARM64_EFI:
-	      efi_file = "BOOTAA64.EFI";
+	      efi_file = "YAMS_GRUBAA64.EFI";
 	      break;
 	    case GRUB_INSTALL_PLATFORM_RISCV32_EFI:
-	      efi_file = "BOOTRISCV32.EFI";
+	      efi_file = "YAMS_GRUBRISCV32.EFI";
 	      break;
 	    case GRUB_INSTALL_PLATFORM_RISCV64_EFI:
-	      efi_file = "BOOTRISCV64.EFI";
+	      efi_file = "YAMS_GRUBRISCV64.EFI";
 	      break;
 	    default:
 	      grub_util_error ("%s", _("You've found a bug"));

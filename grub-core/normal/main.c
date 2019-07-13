@@ -34,6 +34,10 @@
 #include <grub/script_sh.h>
 #include <grub/bufio.h>
 
+#ifdef GRUB_MACHINE_EFI
+#include <grub/efi/efi.h>
+#endif
+
 GRUB_MOD_LICENSE ("GPLv3+");
 
 #define GRUB_DEFAULT_HISTORY_SIZE	50
@@ -556,6 +560,9 @@ GRUB_MOD_INIT(normal)
   
   grub_env_set ("grub_prompt", "grub>");
   grub_env_export ("grub_prompt");
+
+  grub_env_set("grub_secure_boot", "disabled");
+  grub_env_export("grub_secure_boot");
 
   grub_boot_time ("Normal module prepared");
 }
